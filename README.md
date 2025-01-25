@@ -1,70 +1,27 @@
-# Getting Started with Create React App
+18-21
+1. Do same shit as on your first CV  
+2. Use the official colors of Dumy for background and main text
+3. Picture in circle and where u look super official, just on white bc. Make the to swap to less official images,
+only on hover with arrows
+4. Make in DOM-React blocks parts of exp/education, etc, make evrth to become a bit bigger if u hover
+5. Make flags instead of text + letters
+6. With really small text below, make "Motivational letter"
+7. When u hover over university, school, ULA there is explenation why I was there and what specifically it was
+8. Include chess and IQ in . Political spectrum, 16 personalities test, Sangvinic-melancholic
+9. Make it to have 3 languages
+10. Some epic cursor? or bs with how it behaves
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+*why i didn't finish second uni?
+-I wanted to go to US, but because of war it was impossible (but u have to know whether it was, 
+on the beggining of education)
 
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+0. Add to git to check whether it's added at all
+1. Make everth symmetrical as shit, 5 on the left, 5 on right, same geometry
+Vertically is okay, but can i make horizontaly 2 gaps so that first depends on first and second on second?
+2. Make links and colors less like shit
+3. In the upper right corner, make it to change language ENG-FR
+4. Make flags for languages and level
+5. Make on hover to talk about the place
+6. Might play more with background and fonts
+7. Make a monobanc cat that watches your mouse, smth if u click on him, u can turn on audio of him doing "mrrrrrrrrr" or asks "how are u"
+8. Psychological portrait

@@ -1,1 +1,0 @@
-# CV_Karashevskyi_Maksym

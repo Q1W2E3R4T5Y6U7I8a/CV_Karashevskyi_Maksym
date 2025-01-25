@@ -1,0 +1,28 @@
+$main_color_1: #16B2D9;
+$main_color_2: #2E95AE;
+$background_of_date: #397584;
+$link_hover: #365259;
+$link_color: #273133;
+
+h3,h4,p{
+    margin: 6px;
+}
+
+h4{
+    background-color: $background_of_date;
+    font-size: 8px;
+    font-weight: 400;
+}
+
+h3{
+    font-size: 12px;
+}
+
+h2{
+    font-size: 20px;
+    margin-top: 6px;
+}
+
+p {
+    font-size: 10px;
+}
