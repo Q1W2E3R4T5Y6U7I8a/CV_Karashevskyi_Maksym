@@ -1,7 +1,7 @@
 @import 'variables';
 
 .body{
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   padding-left: 20%;
   padding-right: 20%;
   background-color: $main_color_1;
@@ -9,9 +9,11 @@
 
 .content{
   background-color: $main_color_2;
-  padding-left: 15%;
+  padding-left: 12.5%;
+  padding-right: 12.5%;
   padding-top: 10%;
   padding-bottom:10%;
+  
 
   &__link {
     color: $link_color; // This makes the link text red
@@ -28,28 +30,40 @@
 .container_first{
   padding-top: 15px;
   display:flex;
-  gap: 175px;
+  justify-content: space-between;
+
+  .info{
+    text-align: center;
+    margin-left: 100px;
+
+    .phone_icon, .location_icon, .email_icon{
+      height: 15px;
+      width: 15px;
+    }
+  }
 }
 
 .container_second{
   display:flex;
   padding-top: 25px;
+  justify-content: space-between;
 }
 
 .container_third{
   display:flex;
   padding-top: 25px;
-  gap: 150px;
+  justify-content: space-between;
 }
 
 .container_fourth{
   display:flex;
-  gap: 250px;
+  justify-content: space-between;
   padding-top: 25px;
 }
 
 .header {
   display: flex;
+  justify-content: space-between;
 }
 
 .mk_image{
@@ -58,9 +72,9 @@
   margin-left: 15%;
 }
 
-.instagram, .whatsUp, .telegram {
-  height: 25px;
-  width: 25px;
+.instagram, .whatsUp, .telegram, .github {
+  height: 15px;
+  width: 15px;
   border-radius: 50%;
 }
 
@@ -74,10 +88,104 @@
   padding-left: 25%;
 }
 
-.social_media {
-  padding-left: 25%;
-}
-
 .about {
   font-size: 8px;
 }
+
+.social_media {
+  display: flex;
+  gap: 10px; // Adds space between icons
+  padding-left: 25%;
+
+  a {
+    display: inline-block; // Ensures the link wraps the image properly
+  }
+
+  img {
+    width: 25px; // Set a fixed size for the icons
+    height: 25px;
+    border-radius: 50%; // Optional: Makes the icons circular
+    transition: transform 0.3s ease; // Optional: Adds hover effect
+
+    &:hover {
+      transform: scale(1.3); // Optional: Enlarges icons on hover
+    }
+  }
+}
+
+
+.change_language{
+  display: flex;
+  justify-content: flex-end;
+  
+
+  .change_language_en, .change_language_fr, .change_language_ua{
+    font-size:8px;
+  }
+}
+
+//CAT
+
+/* Cat container */
+.cat {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 150px; /* Adjust based on the cat image size */
+  height: auto;
+  pointer-events: none;
+}
+
+/* Cat image */
+.cat img {
+  width: 220px;
+  height: 200px;
+}
+
+/* Eyes container */
+.eyes {
+  position: absolute;
+  top: 24%; /* Adjust based on the cat image */
+  left: 70%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 20px; /* Adjust based on the cat image */
+}
+
+/* Individual eye */
+.eye {
+  width: 10px;
+  height: 10px;
+  background: black;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden; /* Ensures pupils stay inside the eyes */
+  transform-origin: center; /* Ensures the eyes scale from the center */
+  transition: transform 0.25s ease; /* Smooth transition for opening and closing */
+}
+
+/* Pupils */
+.pupil {
+  width: 6px;
+  height: 6px;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Center the pupil by default */
+  transition: transform 0.1s ease; /* Smooth movement */
+}
+
+/* Blinking animation */
+@keyframes blink {
+  0%, 7.14% { transform: scaleY(1); } /* Eyes open for 7 seconds */
+  1.14%, 1.64% { transform: scaleY(0); } /* Eyes closed for 0.5 seconds */
+  7.64%, 100% { transform: scaleY(1); } /* Eyes open again for 7 seconds */
+}
+
+.eye {
+  animation: blink 7.5s infinite; /* Total animation duration: 7.5s */
+}
+
+

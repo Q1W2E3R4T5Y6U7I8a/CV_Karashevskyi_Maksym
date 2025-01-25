@@ -2,123 +2,194 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CV Maksym Karashevskyi</title>
-    <link
-      rel="stylesheet"
-      href="./styles/main.scss"
-    />
-    <script
-      src="scripts/main.js"
-      defer
-    ></script>
-
+    <link rel="stylesheet" href="./styles/main.scss" />
+    <script src="scripts/main.js" defer></script>
     <link rel="icon" href="favicon.svg" />
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   </head>
 
   <body class="body">
     <div class="content">
+      <div class="change_language">
+        <h3 class="change_language_en">EN</h3>
+        <h3 class="change_language_fr">FR</h3>
+        <h3 class="change_language_ua">UA</h3>
+      </div>
+
+      <div class="cat">
+        <img src="/img/cute_cat_no_pupils.png" alt="Cute cat">
+        <div class="eyes">
+          <div class="eye">
+            <div class="pupil"></div>
+          </div>
+          <div class="eye">
+            <div class="pupil"></div>
+          </div>
+        </div>
+      </div>
       
       <div class="header">
-        <h1>Maksym Karashevskyi</h1>
+        <h1 data-en="Maksym Karashevskyi" data-fr="Maksym Karashevskyi" data-ua="Максим Карашевський">Maksym Karashevskyi</h1>
         <img class="mk_image" src="/img/MK_image.jpg">
       </div>
 
-        <div>
-          <div class="container_first">
-            <section class="programming">
-              <h2>Programming education</h2>
-                  <h4>MAI 2019 - SEP 2019 / MAI 2020 - SEP 2020 </h4>
-                <h3><a class="content__link" href="https://mate.academy/en/courses/fullstack">-MateAcademy, FullStack</a></h3>
-                    <p> JS, SCSS, React, Redux, Vue, Angular, SQL, Docker, <br>
-                      DS-> Front End Development Libraries</p>
-                  <h4>DÉC 2020 - JAN 2023 </h4>
-                <h3>FreeCodeCamp:</h3>
-                    <p>
-                      <a class="content__link" href=https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures-v8> 
-                      -> Front End Development Libraries
-                      </a>
-                    </p>
-                    <p>
-                      <a class="content__link" href=https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures-v8> 
-                      -> Relational Database
-                      </a>
-                    </p>
-                    <p>
-                      <a class="content__link" href=https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures-v8> 
-                      -> JavaScript Algorithms and Data Structures 
-                      </a>
-                    </p>
-            </section>
+      <div>
+        <div class="container_first">
+          <section class="programming">
+            <h2 data-en="Programming education" data-fr="Formation en programmation" data-ua="Програмування">Programming education</h2>
+            <h4 data-en="APR 2023 - DEC 2024" data-fr="AVR 2023 - DÉC 2024" data-ua="КВІ 2023 - ГРУ 2024">APR 2023 - DEC 2024</h4>
+            <h3>
+              <span class="popup-text" data-en="I finished the course, completing the themes: JS, TS, HTML, CSS, SCSS, working with Git, DOM, React, Redux, Vue, Angular, SQL, Docker, Data structures and SOLID principles, SCRUM methodology and working with JIRA"
+                    data-fr="J'ai terminé le cours, en complétant les thèmes : JS, TS, HTML, CSS, SCSS, travail avec Git, DOM, React, Redux, Vue, Angular, SQL, Docker, structures de données et principes SOLID, méthodologie SCRUM et travail avec JIRA"
+                    data-ua="Я завершив курс, вивчаючи теми: JS, TS, HTML, CSS, SCSS, робота з Git, DOM, React, Redux, Vue, Angular, SQL, Docker, структури даних та принципи SOLID, методологія SCRUM та робота з JIRA">
+                I finished the course, completing the themes: JS, TS, HTML, CSS, SCSS, working with Git, DOM, React, Redux, Vue, Angular, SQL, Docker, Data structures and SOLID principles, SCRUM methodology and working with JIRA
+              </span>
+              <a class="content__link" href="https://mate.academy/en/courses/fullstack" data-en="-MateAcademy, FullStack" data-fr="-MateAcademy, FullStack" data-ua="-MateAcademy, FullStack">-MateAcademy, FullStack</a>
+            </h3>
 
-            <div class="info">
-              <h3>Rue du Seyon 25</h3>
-              <h3>2000 Neuchatel</h3>
-              <h3>+380 63 94 740 24</h3>
-              <h3>maksym.karashevskyi@gmail.com</h3>
-            </div>
-  
-          </div>
+            <h4 data-en="DÉC 2020 - JAN 2023" data-fr="DÉC 2020 - JAN 2023" data-ua="ГРУ 2020 - СІЧ 2023">DÉC 2020 - JAN 2023</h4>
+            <h3 data-en="FreeCodeCamp:" data-fr="FreeCodeCamp:" data-ua="FreeCodeCamp:">FreeCodeCamp:</h3>
+            <p>
+              <a class="content__link" href="https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures-v8" data-en="-> Front End Development Libraries" data-fr="-> Bibliothèques de développement front-end" data-ua="-> Бібліотеки для фронтенд-розробки">-> Front End Development Libraries</a>
+            </p>
+            <p>
+              <a class="content__link" href="https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures-v8" data-en="-> Relational Database" data-fr="-> Base de données relationnelle" data-ua="-> Реляційні бази даних">-> Relational Database</a>
+            </p>
+            <p>
+              <a class="content__link" href="https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures-v8" data-en="-> JavaScript Algorithms and Data Structures" data-fr="-> Algorithmes et structures de données en JavaScript" data-ua="-> Алгоритми та структури даних на JavaScript">-> JavaScript Algorithms and Data Structures</a>
+            </p>
+          </section>
 
-          <div class="container_second">
-            <section>
-              <h2>Education</h2>
-                  <h4>SEP 2008 - MAI 2017</h4>
-                <h3><a class="content__link" href="https://if.isuo.org/schools/view/id/10935">Scolarité primaire et secondaire Lycée de Sopiv</a></h3>
-                  <h4>SEP 2008 - MAI 2017</h4>
-                <h3><a class="content__link" href="https://if.isuo.org/schools/view/id/10906">Scolarité supérieure Lycée spécialisé n°1 de Kolomyia</a></h3>
-                  <h4>SEP 2019 - JAN 2020</h4>
-                <h3><a class="content__link" href="https://www.ulafoundationofcanada.com/">Académie Ukrainienne de Leadership à Kharkiv</a></h3>
-                  <h4>SEP 2020 - MAY 2021</h4>
-                <h3><a class="content__link" href="https://if.isuo.org/schools/view/id/10935">Université Pédagogique Nationale Drahomanov à Kiev</a></h3>
-                  <h4>SEP 2022 - MAY 2023</h4>
-                <h3><a class="content__link" href="https://if.isuo.org/schools/view/id/10935">AUK - American University in Kyiv</a></h3>
-            </section>
-
-            <div class="languages">
-              <img class="ukrainian" src="/img/ukrainian_flag.png">
-              <p>Native</p>
-              <img class="english" src="/img/english_flag.png">
-              <p>C1</p>
-              <img class="french" src="/img/french_flag.webp">
-              <p>B2</p>
-              <img class="german" src="/img/german_flag.webp">
-              <p>A2</p>
-            </div>
-          </div>
-
-          <div class="container_third">
-            <section>
-              <h2>Projects</h2>
-                <h3><a class="content__link" href="">React based webside</a></h3> 
-                <h3><a class="content__link" href="">Personal financial app</a></h3>
-                <h3><a class="content__link" href="">Bookcrossing app</a></h3>
-            </section>
-
-            <div class="social_media">
-              <img class="instagram" src="/img/instagram_logo.webp">
-              <img class="telegram" src="/img/telegram_logo.jfif">
-              <img class="whatsUp" src="/img/whatsUp_logo.jfif">
-            </div>
-          </div>
-
-          <div class="container_fourth">
-            <section>
-              <h2>Work</h2>
-                  <h4>MAI 2019 - SEP 2019 / MAI 2020 - SEP 2020 </h4>
-                <h3>Angular developer at Schoolify</h3>
-                  <h4>DÉC 2020 - JAN 2023 </h4>
-                <h3>Barista/English teacher/Small business owner</h3>
-            </section>
-
-            <p class="about">About my personal character</p>
+          <div class="info">
+            <img class="phone_icon" src="/img/phone_icon.svg"><h3 data-en="+380 63 94 740 24" data-fr="+380 63 94 740 24" data-ua="+380 63 94 740 24">+380 63 94 740 24</h3>
+            <img class="location_icon" src="/img/location_icon.svg"><h3 data-en="Neuchatel 2000, Rue du Seyon 25" data-fr="Neuchatel 2000, Rue du Seyon 25" data-ua="Невшатель 2000, Rue du Seyon 25">Neuchatel 2000, Rue du Seyon 25</h3>
+            <img class="email_icon" src="/img/email_icon.svg"><h3 data-en="maksym.karashevskyi@gmail.com" data-fr="maksym.karashevskyi@gmail.com" data-ua="maksym.karashevskyi@gmail.com">maksym.karashevskyi@gmail.com</h3>
           </div>
         </div>
 
+        <div class="container_second">
+          <section>
+            <h2 data-en="Education" data-fr="Éducation" data-ua="Освіта">Education</h2>
+            <h4 data-en="SEP 2008 - MAY 2017" data-fr="SEP 2008 - MAI 2017" data-ua="ВЕР 2008 - ТРА 2017">SEP 2008 - MAY 2017</h4>
+            <h3>
+              <a class="content__link" href="https://if.isuo.org/schools/view/id/10935" data-en="Primary and secondary school in Sopiv" data-fr="École primaire et secondaire à Sopiv" data-ua="Початкова та середня школа в Сопові">Primary and secondary school in Sopiv</a>
+              <span class="popup-text" data-en="Studied in a small mountain village school in Western Ukraine, but in the 9th year decided to go to the best specialized school in the nearest town."
+                    data-fr="Étudié dans une petite école de village de montagne dans l'ouest de l'Ukraine, mais en 9e année a décidé d'aller à la meilleure école spécialisée de la ville la plus proche."
+                    data-ua="Навчався у невеликій гірській сільській школі на заході України, але на 9-му році навчання вирішив перейти до найкращої спеціалізованої школи у найближчому місті.">
+                Studied in a small mountain village school in Western Ukraine, but in the 9th year decided to go to the best specialized school in the nearest town.
+              </span>
+            </h3>
+
+            <h4 data-en="SEP 2008 - MAY 2017" data-fr="SEP 2008 - MAI 2017" data-ua="ВЕР 2008 - ТРА 2017">SEP 2008 - MAY 2017</h4>
+            <h3>
+              <a class="content__link" href="https://if.isuo.org/schools/view/id/10906" data-en="Specialized school №1 in Kolomyia" data-fr="École spécialisée №1 à Kolomyia" data-ua="Спеціалізована школа №1 в Коломиї">Specialized school №1 in Kolomyia</a>
+              <span class="popup-text" data-en="The school specialized in English language."
+                    data-fr="L'école était spécialisée en langue anglaise."
+                    data-ua="Школа спеціалізувалася на вивченні англійської мови.">
+                The school specialized in English language.
+              </span>
+            </h3>
+
+            <h4 data-en="SEP 2019 - JAN 2020" data-fr="SEP 2019 - JAN 2020" data-ua="ВЕР 2019 - СІЧ 2020">SEP 2019 - JAN 2020</h4>
+            <h3>
+              <a class="content__link" href="https://www.ulafoundationofcanada.com/" data-en="Ukrainian Leadership Academy in Kharkiv" data-fr="Académie ukrainienne de leadership à Kharkiv" data-ua="Українська академія лідерства у Харкові">Ukrainian Leadership Academy in Kharkiv</a>
+              <span class="popup-text" data-en="Program based on military training in Israel but with more intellectual aspects."
+                    data-fr="Programme basé sur la formation militaire en Israël mais avec des aspects plus intellectuels."
+                    data-ua="Програма, заснована на військовій підготовці в Ізраїлі, але з більш інтелектуальними аспектами.">
+                Program based on military training in Israel but with more intellectual aspects.
+              </span>
+            </h3>
+
+            <h4 data-en="SEP 2020 - MAY 2021" data-fr="SEP 2020 - MAI 2021" data-ua="ВЕР 2020 - ТРА 2021">SEP 2020 - MAY 2021</h4>
+            <h3>
+              <a class="content__link" href="https://if.isuo.org/schools/view/id/10935" data-en="Drahomanov National Pedagogical University in Kyiv" data-fr="Université pédagogique nationale Drahomanov à Kiev" data-ua="Національний педагогічний університет імені Драгоманова у Києві">Drahomanov National Pedagogical University in Kyiv</a>
+              <span class="popup-text" data-en="At the time, I wanted to become a psychotherapist, inspired by Viktor Frankl, but eventually, I discovered that the best thing I could do as a psychotherapist is prevention, not healing. With that in mind, I gave my full attention to media platforms, which combined had about 80k followers, and got a job as a barista/manager in my friend's beauty salon."
+                    data-fr="À l'époque, je voulais devenir psychothérapeute, inspiré par Viktor Frankl, mais finalement, j'ai découvert que la meilleure chose que je pouvais faire en tant que psychothérapeute était la prévention, pas la guérison. Avec cela à l'esprit, j'ai donné toute mon attention aux plateformes médiatiques, qui comptaient environ 80 000 abonnés, et j'ai obtenu un emploi de barista/gérant dans le salon de beauté de mon ami."
+                    data-ua="На той час я хотів стати психотерапевтом, натхненний Віктором Франклом, але згодом я зрозумів, що найкраще, що я можу робити як психотерапевт, це запобігання, а не лікування. З цим на думці я зосередився на медіаплатформах, які разом мали близько 80 тисяч підписників, і отримав роботу бариста/менеджера в салоні краси мого друга.">
+                At the time, I wanted to become a psychotherapist, inspired by Viktor Frankl, but eventually, I discovered that the best thing I could do as a psychotherapist is prevention, not healing. With that in mind, I gave my full attention to media platforms, which combined had about 80k followers, and got a job as a barista/manager in my friend's beauty salon.
+              </span>
+            </h3>
+
+            <h4 data-en="SEP 2022 - MAY 2023" data-fr="SEP 2022 - MAI 2023" data-ua="ВЕР 2022 - ТРА 2023">SEP 2022 - MAY 2023</h4>
+            <h3>
+              <a class="content__link" href="https://if.isuo.org/schools/view/id/10935" data-en="AUK - American University in Kyiv" data-fr="AUK - Université américaine à Kyiv" data-ua="АУК - Американський університет у Києві">AUK - American University in Kyiv</a>
+              <span class="popup-text" data-en="With the goal of going to the USA, I enrolled in a branch of Arizona State University in Kyiv, but due to new laws, it became impossible to leave the country."
+                    data-fr="Avec l'objectif d'aller aux États-Unis, je me suis inscrit à une branche de l'Université d'État de l'Arizona à Kyiv, mais en raison de nouvelles lois, il est devenu impossible de quitter le pays."
+                    data-ua="З метою поїздки до США я вступив до філії Університету штату Аризона в Києві, але через нові закони стало неможливо виїхати з країни.">
+                With the goal of going to the USA, I enrolled in a branch of Arizona State University in Kyiv, but due to new laws, it became impossible to leave the country.
+              </span>
+            </h3>
+          </section>
+
+          <div class="languages">
+            <img class="ukrainian" src="/img/ukrainian_flag.png">
+            <p data-en="Native" data-fr="Natif" data-ua="Рідна">Native</p>
+            <img class="english" src="/img/english_flag.png">
+            <p data-en="C1" data-fr="C1" data-ua="C1">C1</p>
+            <img class="french" src="/img/french_flag.webp">
+            <p data-en="B2" data-fr="B2" data-ua="B2">B2</p>
+            <img class="german" src="/img/german_flag.webp">
+            <p data-en="A2" data-fr="A2" data-ua="A2">A2</p>
+          </div>
+        </div>
+
+        <div class="container_third">
+          <section>
+            <h2 data-en="Projects" data-fr="Projets" data-ua="Проєкти">Projects</h2>
+            <h3>
+              <a class="content__link" href="https://q1w2e3r4t5y6u7i8a.github.io/react_phone-catalog/" data-en="React-based website" data-fr="Site web basé sur React" data-ua="Веб-сайт на React">React-based website</a>
+            </h3>
+            <h3>
+              <a class="content__link" href="" data-en="Personal financial app" data-fr="Application financière personnelle" data-ua="Особистий фінансовий додаток">Personal financial app</a>
+            </h3>
+            <h3>
+              <a class="content__link" href="" data-en="Bookcrossing app" data-fr="Application Bookcrossing" data-ua="Додаток для буккроссингу">Bookcrossing app</a>
+            </h3>
+          </section>
+
+          <div class="social_media">
+            <a href="https://www.instagram.com/makarkarma/?hl=en">
+              <img class="instagram" src="/img/instagram_logo.webp" alt="Instagram">
+            </a>
+            <a href="https://t.me/makarkarma">
+              <img class="telegram" src="/img/telegram_logo.jfif" alt="Telegram">
+            </a>
+            <a href="https://api.whatsapp.com/qr/5IAOPCL5QMVCA1?autoload=1&app_absent=0">
+              <img class="whatsUp" src="/img/whatsUp_logo.jfif" alt="WhatsApp">
+            </a>
+            <a href="https://github.com/Q1W2E3R4T5Y6U7I8a">
+              <img class="github" src="/img/github_logo.svg" alt="GitHub">
+            </a>
+          </div>
+        </div>
+
+        <div class="container_fourth">
+          <section>
+            <h2 data-en="Work" data-fr="Travail" data-ua="Робота">Work</h2>
+            <h4 data-en="SEP 2024 - Today" data-fr="SEP 2024 - Aujourd'hui" data-ua="ВЕР 2024 - Зараз">SEP 2024 - Today</h4>
+            <h3>
+              <span data-en="Angular developer at Schoolify" data-fr="Développeur Angular chez Schoolify" data-ua="Angular розробник у Schoolify">Angular developer at Schoolify</span>
+              <span class="popup-text" data-en="Me and my friend are working on an application that universities and schools could use. I am concentrated on the frontend, he is on the Java backend."
+                    data-fr="Mon ami et moi travaillons sur une application que les universités et les écoles pourraient utiliser. Je me concentre sur le frontend, lui sur le backend Java."
+                    data-ua="Ми з другом працюємо над додатком, який могли б використовувати університети та школи. Я займаюся фронтендом, він - Java бекендом.">
+                Me and my friend are working on an application that universities and schools could use. I am concentrated on the frontend, he is on the Java backend.
+              </span>
+            </h3>
+
+            <h4 data-en="DÉC 2020 - JAN 2023" data-fr="DÉC 2020 - JAN 2023" data-ua="ГРУ 2020 - СІЧ 2023">DÉC 2020 - JAN 2023</h4>
+            <h3 data-en="Barista/English teacher/Small business owner" data-fr="Barista/Professeur d'anglais/Propriétaire d'une petite entreprise" data-ua="Бариста/Викладач англійської/Власник невеликого бізнесу">Barista/English teacher/Small business owner</h3>
+          </section>
+
+          <h3 class="about">
+            <a href="ps_portrait.html" 
+            data-en="Psychological portrait" 
+            data-fr="Portrait psychologique" 
+            data-ua="Психологічний портрет">Psychological portrait</a>
+          </h3>
+        </div>
+      </div>
     </div>
   </body>
 </html>
