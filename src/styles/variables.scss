@@ -14,8 +14,11 @@ h4{
     font-weight: 400;
 }
 
-h3 {
-    font-size: 12px;
+h3{
+  font-size: 12px;
+}
+
+h3,h2 {
     position: relative; // Required for positioning the pop-up
 
     cursor: pointer; // Changes cursor to indicate interactivity
@@ -35,6 +38,7 @@ h3 {
       left: 50%;
       margin-left: -100px; // Center the pop-up
       transition: opacity 0.3s ease, visibility 0.3s ease; // Smooth transition
+      font-size: 12px;
     }
   
     &:hover .popup-text {

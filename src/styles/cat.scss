@@ -1,0 +1,70 @@
+.cat {
+    position: fixed;
+    bottom: -120px;
+    right: 20px;
+    width: 150px; /* Adjust based on the cat image size */
+    height: auto;
+    pointer-events: none;
+    transition: bottom 1.4s ease; /* Smooth transition for moving down */
+  }
+  
+  .cat.move-down {
+    bottom: -220px; /* Move down by 100px */
+  }
+  
+  /* Cat image */
+  .cat img {
+    width: 220px;
+    height: 200px;
+  }
+  
+  /* Eyes container */
+  .eyes {
+    position: absolute;
+    top: 24%; /* Adjust based on the cat image */
+    left: 70%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 20px; /* Adjust based on the cat image */
+    transition: top 3s ease; /* Smooth transition for moving eyes */
+  }
+  
+  .cat.move-down .eyes {
+    top: calc(24% + 100px); /* Move eyes down by 100px */
+  }
+  
+  /* Individual eye */
+  .eye {
+    width: 8px;
+    height: 8px;
+    background: black;
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden; /* Ensures pupils stay inside the eyes */
+    transform-origin: center; /* Ensures the eyes scale from the center */
+    transition: transform 0.25s ease; /* Smooth transition for opening and closing */
+  }
+  
+  /* Pupils */
+  .pupil {
+    width: 6px;
+    height: 6px;
+    background: white;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Center the pupil by default */
+    transition: transform 0.1s ease; /* Smooth movement */
+  }
+  
+  /* Blinking animation */
+  @keyframes blink {
+    0%, 7.14% { transform: scaleY(1); } /* Eyes open for 7 seconds */
+    1.14%, 1.64% { transform: scaleY(0); } /* Eyes closed for 0.5 seconds */
+    7.64%, 100% { transform: scaleY(1); } /* Eyes open again for 7 seconds */
+  }
+  
+  .eye {
+    animation: blink 7.5s infinite; /* Total animation duration: 7.5s */
+  }

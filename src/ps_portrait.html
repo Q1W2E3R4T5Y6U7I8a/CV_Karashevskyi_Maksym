@@ -3,25 +3,118 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Psychologie portait</title>
-    <link rel="stylesheet" href="./styles/main.scss" />
+    <title>Psychologie portrait</title>
+    <link rel="stylesheet" href="./styles/index.scss" />
     <script src="scripts/main.js" defer></script>
   </head>
 
-  <body>
-    <h1>Текст про мене/мотиваційний лист</h1>
-    <h2>Тести IQ/16Pers/Political compass</h2>
-    <h3>Список захоплень</h3>
+  <body class="body">
+    <div class="content">
+      <div class="change_language">
+        <h3 class="change_language_en">EN</h3>
+        <h3 class="change_language_fr">FR</h3>
+        <h3 class="change_language_ua">UA</h3>
+      </div>
 
-    <!-- Cute cat -->
-    <div class="cat">
-      <img src="/img/cute_cat_no_pupils.png" alt="Cute cat">
-      <div class="eyes">
-        <div class="eye">
-          <div class="pupil"></div>
+      <div class="cat">
+        <img src="/img/cute_cat_no_eyes.png" alt="">
+        <div class="eyes">
+          <div class="eye">
+            <div class="pupil"></div>
+          </div>
+          <div class="eye">
+            <div class="pupil"></div>
+          </div>
         </div>
-        <div class="eye">
-          <div class="pupil"></div>
+      </div>
+
+      <div class="motivational__letter">
+        <h2  style="color: white;" data-en="Highly motivated and responsible person who desires to apply gained skills in Full-Stack development. Ready to work on already existing projects but new ones are preferable. Can work on-site as well as remotely. Have good problem-solving and decision-making skills that help me to meet deadlines. Friendly, kind, love hard-working, flexible, good in cooperating, ready to learn something new."
+           data-fr="Personne hautement motivée et responsable désireuse d'appliquer les compétences acquises dans le développement Full-Stack. Prêt à travailler sur des projets existants, mais de nouveaux projets sont préférables. Peut travailler sur site ainsi qu'à distance. Possède de bonnes compétences en résolution de problèmes et en prise de décision qui m'aident à respecter les délais. Amical, gentil, aime travailler dur, flexible, bon en coopération, prêt à apprendre de nouvelles choses."
+           data-ua="Високомотиваційна та відповідальна особа, яка бажає застосовувати набуті навички у Full-Stack розробці. Готовий працювати над вже існуючими проектами, але нові проекти є переважними. Можу працювати як на місці, так і віддалено. Маю хороші навички вирішення проблем та прийняття рішень, які допомагають мені дотримуватися дедлайнів. Дружній, добрий, люблю важку роботу, гнучкий, хороший у співпраці, готовий вчитися чомусь новому.">
+          Highly motivated and responsible person who desires to apply gained skills in Full-Stack development. Ready to work on already existing projects but new ones are preferable. Can work on-site as well as remotely. Have good problem-solving and decision-making skills that help me to meet deadlines. Friendly, kind, love hard-working, flexible, good in cooperating, ready to learn something new.
+        </h2>
+      </div>
+
+
+
+        <div class="Political compass">
+            <h2 style="color: white;" >Political compass
+              <span class="popup-text" 
+                    data-en="If only people under 44 voted, Harris would win. Or only people with education. The voting system is broken... You can't give equal voting rights to a grandma who is ready to vote for anyone for a pack of buckwheat and a professor of political science. You might say, how else? Well, let's choose the same way as ministers, meritocratically. Or we reduce the real power of the president and reduce it to an administrative role as in Switzerland or a symbolic one as in Britain. Why should the person with literally the most power in the world be chosen by 'the worst thinking machine in the world'—the collective mass?"
+                    data-fr="Si seuls les personnes de moins de 44 ans votaient, Harris gagnerait. Ou seulement les personnes ayant une éducation. Le système de vote est cassé... On ne peut pas donner un droit de vote égal à une grand-mère prête à voter pour n'importe qui pour un paquet de sarrasin et à un professeur de sciences politiques. Vous direz, comment faire autrement ? Eh bien, choisissons de la même manière que les ministres, méritocratiquement. Ou nous réduisons le pouvoir réel du président et le réduisons à un rôle administratif comme en Suisse ou symbolique comme en Grande-Bretagne. Pourquoi la personne avec littéralement le plus de pouvoir au monde devrait-elle être choisie par 'la pire machine à penser au monde'—la masse collective ?"
+                    data-ua="Якщо б голосували люди тільки до 44 років, Гаріс б виграла. Або тільки люди з освітою. Система голосування поламана... Не можна давати рівний голос бабці, що за пачку гречки готова за будь-кого проголосувати, і професору політологу. Скажете, а як інакше? Так давайте вибирати так само, як міністрів, меритократично. Або зменшуємо реальну владу президента і зводимо до адміністративної ролі, як у Швейцарії, чи символічної, як у Британії. Чому той, у кого буде буквально найбільша влада у світі, має бути обраний 'найгіршою мислячою машиною у світі'—колективною масою?">
+                  If only people under 44 voted, Harris would win. Or only people with education. The voting system is broken... You can't give equal voting rights to a grandma who is ready to vote for anyone for a pack of buckwheat and a professor of political science. You might say, how else? Well, let's choose the same way as ministers, meritocratically. Or we reduce the real power of the president and reduce it to an administrative role as in Switzerland or a symbolic one as in Britain. Why should the person with literally the most power in the world be chosen by 'the worst thinking machine in the world'—the collective mass?
+              </span>
+            </h2>
+            <img src="/img/political_compas.jpg"  class="political_compas">
+        </div>
+
+        <div class="16_personalities">
+          <h2 style="color: white;" >16_personalitites test
+            <span class="popup-text" 
+            data-en="You can see detailed test on https://www.16personalities.com/profiles/d234cb5436c07, overall, I would describe myself as the guy who wants to debate, move and create. I consider myself a polemist, and that test got me a bit wrong. I am no way a 'commander,' though maybe right now I am like that because of a hard personal situation. I am more focused on 'getting things done' than on innovation and philosophy. It's hard to remain a philosopher if you lived 2 years in war and now got into a situation where you start all over again."
+            data-fr="Vous pouvez voir le test détaillé sur https://www.16personalities.com/profiles/d234cb5436c07. En général, je me décrirais comme quelqu'un qui aime débattre, bouger et créer. Je me considère comme un polémiste, et ce test m'a un peu mal compris. Je ne suis en aucun cas un 'commandant', bien que peut-être en ce moment, je suis comme ça à cause d'une situation personnelle difficile. Je suis plus concentré sur 'faire avancer les choses' que sur l'innovation et la philosophie. Il est difficile de rester un philosophe si vous avez vécu 2 ans de guerre et que vous vous retrouvez maintenant dans une situation où vous devez tout recommencer."
+            data-ua="Ви можете побачити детальний тест на https://www.16personalities.com/profiles/d234cb5436c07. Загалом, я б описав себе як людину, яка хоче дискутувати, рухатися і творити. Я вважаю себе полемістом, і цей тест трохи помилився щодо мене. Я ніяк не 'командир', хоча, можливо, зараз я такий через складну особисту ситуацію. Я більше зосереджений на 'досягненні результатів', ніж на інноваціях та філософії. Важко залишатися філософом, якщо ти прожив 2 роки війни і тепер опинився в ситуації, коли починаєш все спочатку.">
+          You can see detailed test on https://www.16personalities.com/profiles/d234cb5436c07, overall, I would describe myself as the guy who wants to debate, move and create. I consider myself a polemist, and that test got me a bit wrong. I am no way a 'commander,' though maybe right now I am like that because of a hard personal situation. I am more focused on 'getting things done' than on innovation and philosophy. It's hard to remain a philosopher if you lived 2 years in war and now got into a situation where you start all over again.
+            </span>
+          </h2>
+          <img src="/img/16_personalities_test.jpg" class="personalities_image">
+        </div>
+
+        <div class="Hobbies">
+          <h2  style="color: white;" data-en="Hobbies" data-fr="Hobbies" data-ua="Хобі">Hobbies</h2>
+            
+            <h3 
+            style="color: white;"class="hobby-title" data-en="Guitar" data-fr="Guitare" data-ua="Гітара">Guitar
+              <span class="popup-text" data-en="At the time I hoped to be a rock star, lol, I was doing street music in Poland, Germany, in different cities in Ukraine"
+                    data-fr="À l'époque, j'espérais devenir une rock star, lol, je faisais de la musique de rue en Pologne, en Allemagne, dans différentes villes d'Ukraine"
+                    data-ua="Тоді я сподівався стати рок-зіркою, лол, я займався вуличною музикою в Польщі, Німеччині, у різних містах України">
+                At the time I hoped to be a rock star, lol, I was doing street music in Poland, Germany, in different cities in Ukraine
+              </span>
+            </h3>
+          
+            <h3 
+            style="color: white;"data-en="Chess" data-fr="Échecs" data-ua="Шахи">Chess
+              <span class="popup-text" data-en="When I was in 3rd grade I started attending chess club and did it for 5 years, my ELO is about 1700 and I have about 10k played games on chess.com"
+                    data-fr="Quand j'étais en 3e année, j'ai commencé à fréquenter le club d'échecs et je l'ai fait pendant 5 ans, mon ELO est d'environ 1700 et j'ai environ 10 000 parties jouées sur chess.com"
+                    data-ua="Коли я був у 3-му класі, я почав відвідувати шаховий клуб і робив це протягом 5 років, мій ELO становить близько 1700, і я маю близько 10 тисяч зіграних партій на chess.com">
+                When I was in 3rd grade I started attending chess club and did it for 5 years, my ELO is about 1700 and I have about 10k played games on chess.com
+              </span>
+            </h3>
+
+            <h3 
+            style="color: white;"data-en="Video games" data-fr="Jeux vidéo" data-ua="Відеоігри">Video games
+                <span class="popup-text" data-en="At 12 y.o or something I discovered what is torrenting and after that I could literally play for 24h some random games, though my favourites always have been strategies like 'Heroes of Might & Magic 3', my favourite is 'Warcraft 3'"
+                      data-fr="À 12 ans environ, j'ai découvert ce qu'est le torrenting et après cela, je pouvais littéralement jouer pendant 24 heures à des jeux aléatoires, bien que mes préférés aient toujours été des stratégies comme 'Heroes of Might & Magic 3', mon préféré est 'Warcraft 3'"
+                      data-ua="У 12 років або близько того я дізнався, що таке торренти, і після цього міг буквально грати 24 години в якісь випадкові ігри, хоча моїми улюбленими завжди були стратегії, такі як 'Heroes of Might & Magic 3', моя улюблена гра - 'Warcraft 3'">
+                  At 12 y.o or something I discovered what is torrenting and after that I could literally play for 24h some random games, though my favourites always have been strategies like 'Heroes of Might & Magic 3', my favourite is 'Warcraft 3'
+                </span>
+            </h3>
+
+            <h3 style="color: white;" data-en="Writing/reading" data-fr="Écriture/lecture" data-ua="Письмо/читання">Writing/reading
+                <span class="popup-text" data-en="I read about 500 books and in my personal Telegram channel: https://t.me/dumyUA, from 2020 I've done writings for more than for one book I believe. The favourite books are: 'Harry Potter and Methods of Rationality' and 'Man in Search for Meaning'"
+                      data-fr="J'ai lu environ 500 livres et dans mon canal Telegram personnel : https://t.me/dumyUA, depuis 2020, j'ai écrit plus que pour un livre, je crois. Les livres préférés sont : 'Harry Potter et les Méthodes de la Rationalité' et 'L'homme en quête de sens'"
+                      data-ua="Я прочитав близько 500 книг і у своєму особистому каналі Telegram: https://t.me/dumyUA, з 2020 року я написав тексти, які, я вважаю, складають більше, ніж одна книга. Улюблені книги: 'Гаррі Поттер і Методи Раціональності' та 'Людина в пошуках сенсу'">
+                  I read about 500 books and in my personal Telegram channel: https://t.me/dumyUA, from 2020 I've done writings for more than for one book I believe. The favourite books are: 'Harry Potter and Methods of Rationality' and 'Man in Search for Meaning'
+                </span>
+            </h3>
+
+        </div>
+        <div  style="color: white;" class="other">
+          <h2>Other</h2>
+          <h3>IQ - 115</h3>
+          <h3>Temperament - sanguine-phlegmatic</h3>
+        </div>
+
+        <div class="container_fourth">
+          <h3>
+            <a class="content__link" 
+            href="index.html" 
+            data-en="Back to CV" 
+            data-fr="Revenir à CV" 
+            data-ua="Назад до CV">Back to CV</a>
+          </h3>
         </div>
       </div>
     </div>

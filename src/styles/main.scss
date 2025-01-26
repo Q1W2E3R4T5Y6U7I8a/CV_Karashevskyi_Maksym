@@ -2,8 +2,8 @@
 
 .body{
   font-family: "Roboto", sans-serif;
-  padding-left: 20%;
-  padding-right: 20%;
+  padding-left: 25%;
+  padding-right: 25%;
   background-color: $main_color_1;
 }
 
@@ -34,7 +34,6 @@
 
   .info{
     text-align: center;
-    margin-left: 100px;
 
     .phone_icon, .location_icon, .email_icon{
       height: 15px;
@@ -84,12 +83,39 @@
   border-radius: 50%;
 }
 
-.languages {
-  padding-left: 25%;
-}
 
 .about {
   font-size: 8px;
+  position: relative; // Required for positioning the pop-up
+
+  cursor: pointer; // Changes cursor to indicate interactivity
+
+  .popup-text {
+    visibility: hidden; // Hide the pop-up by default
+    opacity: 0;
+    width: 200px; // Set a fixed width for the pop-up
+    background-color: $main_color_2; // Use your theme color
+    color: white; // Text color
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1; // Ensure the pop-up appears above other content
+    bottom: 125%; // Position the pop-up above the <h3>
+    left: 50%;
+    margin-left: -100px; // Center the pop-up
+    transition: opacity 0.3s ease, visibility 0.3s ease; // Smooth transition
+  }
+
+  &:hover .popup-text {
+    visibility: visible; // Show the pop-up on hover
+    opacity: 1;
+  }
+
+  &:hover {
+    transform: scale(1.1); // Optional: Enlarges text on hover
+    transition: transform 0.3s ease;
+  }
 }
 
 .social_media {
@@ -123,69 +149,3 @@
     font-size:8px;
   }
 }
-
-//CAT
-
-/* Cat container */
-.cat {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  width: 150px; /* Adjust based on the cat image size */
-  height: auto;
-  pointer-events: none;
-}
-
-/* Cat image */
-.cat img {
-  width: 220px;
-  height: 200px;
-}
-
-/* Eyes container */
-.eyes {
-  position: absolute;
-  top: 24%; /* Adjust based on the cat image */
-  left: 70%;
-  transform: translateX(-50%);
-  display: flex;
-  gap: 20px; /* Adjust based on the cat image */
-}
-
-/* Individual eye */
-.eye {
-  width: 10px;
-  height: 10px;
-  background: black;
-  border-radius: 50%;
-  position: relative;
-  overflow: hidden; /* Ensures pupils stay inside the eyes */
-  transform-origin: center; /* Ensures the eyes scale from the center */
-  transition: transform 0.25s ease; /* Smooth transition for opening and closing */
-}
-
-/* Pupils */
-.pupil {
-  width: 6px;
-  height: 6px;
-  background: white;
-  border-radius: 50%;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%); /* Center the pupil by default */
-  transition: transform 0.1s ease; /* Smooth movement */
-}
-
-/* Blinking animation */
-@keyframes blink {
-  0%, 7.14% { transform: scaleY(1); } /* Eyes open for 7 seconds */
-  1.14%, 1.64% { transform: scaleY(0); } /* Eyes closed for 0.5 seconds */
-  7.64%, 100% { transform: scaleY(1); } /* Eyes open again for 7 seconds */
-}
-
-.eye {
-  animation: blink 7.5s infinite; /* Total animation duration: 7.5s */
-}
-
-

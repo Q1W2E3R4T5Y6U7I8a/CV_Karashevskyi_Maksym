@@ -25,3 +25,10 @@ Vertically is okay, but can i make horizontaly 2 gaps so that first depends on f
 6. Might play more with background and fonts
 7. Make a monobanc cat that watches your mouse, smth if u click on him, u can turn on audio of him doing "mrrrrrrrrr" or asks "how are u"
 8. Psychological portrait
+
+0. Make cat to hide if u approach
+1. Psychological portrait
+2. After finish, send to Dima and ask, maybe cd work on him even, but don't ask second part yet
+3. Make links to certificates specifically on freecode?
+4. Make to look on phone good
+5. If all done, go work on finance app

@@ -34,25 +34,55 @@ document.addEventListener('DOMContentLoaded', () => {
   document.addEventListener('mousemove', (e) => {
     const cat = document.querySelector('.cat');
     const pupils = document.querySelectorAll('.pupil');
-
+  
     const mouseX = e.clientX;
     const mouseY = e.clientY;
-
+  
     // Get the cat's position
     const catRect = cat.getBoundingClientRect();
     const catX = catRect.left + catRect.width / 2;
     const catY = catRect.top + catRect.height / 2;
-
+  
+    // Calculate the distance between the cursor and the cat
+    const distance = Math.sqrt((mouseX - catX) ** 2 + (mouseY - catY) ** 2);
+  
+    // If the cursor is within 100px of the cat, move the cat and eyes down
+    if (distance < 100) {
+      cat.classList.add('move-down');
+    } else {
+      cat.classList.remove('move-down');
+    }
+  
     // Calculate the angle between the cat and the cursor
     const angle = Math.atan2(mouseY - catY, mouseX - catX);
-
+  
     // Calculate the distance the pupils should move
     const maxDistance = 5; // Maximum distance the pupils can move
     const pupilX = Math.cos(angle) * maxDistance;
     const pupilY = Math.sin(angle) * maxDistance;
-
+  
     // Move the pupils
     pupils.forEach(pupil => {
       pupil.style.transform = `translate(calc(-50% + ${pupilX}px), calc(-50% + ${pupilY}px))`;
     });
   });
+
+  document.addEventListener("DOMContentLoaded", function() {
+    const traits = document.querySelectorAll('.trait');
+
+    traits.forEach(trait => {
+        const percent = trait.getAttribute('data-percent');
+        const circle = trait.querySelector('.circle');
+        const angle = (percent / 100) * 360;
+
+        trait.style.background = `conic-gradient(#4caf50 ${angle}deg, #e0e0e0 ${angle}deg)`;
+
+        const radius = 100; // Radius of the circle
+        const radians = (angle - 90) * (Math.PI / 180); // Convert degrees to radians
+        const x = radius + radius * Math.cos(radians);
+        const y = radius + radius * Math.sin(radians);
+
+        circle.style.left = `${x}px`;
+        circle.style.top = `${y}px`;
+    });
+});
