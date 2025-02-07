@@ -1,5 +1,32 @@
 @import 'variables';
 
+@media (max-width: 768px) {
+  .body {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  .content {
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+  }
+
+  .languages {
+    padding-left: 75%;
+  }
+
+  .social_media{
+    margin-left: 50%;
+  }
+
+  .ps_portrait{
+    padding-left: 75%;
+  }
+
+}
+
 .body{
   font-family: "Roboto", sans-serif;
   padding-left: 25%;
@@ -24,8 +51,6 @@
     }
   }
 }
-
-
 
 .container_first{
   padding-top: 15px;
@@ -77,7 +102,7 @@
   border-radius: 50%;
 }
 
-.ukrainian, .english, .german, .french {
+.ukrainian, .english, .german, .french, .parashian {
   height: 25px;
   width: 25px;
   border-radius: 50%;
