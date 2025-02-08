@@ -3,7 +3,8 @@
 ->Also, except the themes values, let the color of text to change as well
 
 - Make compass also by urself, with the link to the passed test
-- Make in projects "others" where on highlight there will be a list of huge amount of projects like 2048, with links to them
 - Change the page of psychologic traits, write it for yourself, don't use images, so that u could translate it, u can literally take translations from there
 
 ?. https://www.youtube.com/watch?v=b8ZUb_Okxro REST API?
+
+-In political compass hover looks like sheet
