@@ -1,0 +1,50 @@
+.toggle__btn {
+    cursor: pointer;
+    margin-left: 5px;
+    font-size: 12px;
+    transition: transform 0.3s ease;
+    display: none; // Initially hide button
+  }
+  
+  @media (max-width: 1024px) {
+    .toggle__btn {
+      display: inline-block; // Show the toggle button
+    }
+  
+    .toggle__btn.active {
+      transform: rotate(90deg); // Rotate the button when active
+    }
+  
+    .popup-text {
+      visibility: hidden;
+      opacity: 0;
+      width: 200px;
+      background-color: var(--main-color-2);
+      color: white;
+      text-align: center;
+      border-radius: 5px;
+      padding: 5px;
+      position: absolute;
+      z-index: 1;
+      bottom: 125%;
+      left: 50%;
+      margin-left: -100px;
+      transition: opacity 0.3s ease, visibility 0.3s ease;
+    }
+  
+    .popup-text.active {
+      visibility: visible;
+      opacity: 1; // Show the popup text when active
+    }
+  
+    /* Remove hover effect when the popup text is visible */
+    .toggle__btn:not(.active):hover {
+      transform: none;
+    }
+  
+    h3:hover .popup-text {
+      visibility: hidden; // Don't show popup text when hover is active
+      opacity: 0;
+    }
+  }
+  

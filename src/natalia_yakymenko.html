@@ -5,12 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CV Natalia Yakymenko</title>
     <link rel="stylesheet" href="./styles/index.scss" />
-    <script src="scripts/main.js" defer></script>
+    <script type="module" src="/src/scripts/main.js"></script>
     <link rel="icon" href="favicon.svg" />
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   </head>
 
   <body class="body">
+    <div class="change_theme">
+      <div id="theme-buttons" class="theme-buttons hidden">
+          <button class="theme-btn" data-theme="default"></button>
+          <button class="theme-btn" data-theme="dark"></button>
+          <button class="theme-btn" data-theme="yellow"></button>
+          <button class="theme-btn" data-theme="green"></button>
+      </div>
+      <button id="settings-btn" class="settings-btn">
+        <img src="../img/settings_icon.png" alt="Settings">
+      </button>
+  </div>
+
     <div class="content">
       <div class="change_language">
         <h3 class="change_language_en">EN</h3>

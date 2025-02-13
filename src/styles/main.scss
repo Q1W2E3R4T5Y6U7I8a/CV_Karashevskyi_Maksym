@@ -1,86 +1,80 @@
 @import 'variables';
 
-@media (max-width: 768px) {
-  .body {
-    padding-left: 5%;
-    padding-right: 5%;
-  }
+@media (max-width: 1024px) {
 
-  .content {
-    padding-left: 5%;
-    padding-right: 5%;
-    padding-top: 5%;
-    padding-bottom: 5%;
+  .body {
+    margin-left: -50px;
   }
 
   .languages {
     padding-left: 75%;
   }
 
-  .social_media{
+  .social_media {
     margin-left: 50%;
   }
 
-  .ps_portrait{
+  .ps_portrait {
     padding-left: 75%;
+    display: none;
   }
-
 }
 
-.body{
+.body {
   font-family: "Roboto", sans-serif;
   padding-left: 25%;
   padding-right: 25%;
-  background-color: $main_color_1;
+  background-color: var(--main-color-1);
 }
 
-.content{
-  background-color: $main_color_2;
+.content {
+  background-color: var(--main-color-2);
   padding-left: 12.5%;
   padding-right: 12.5%;
   padding-top: 10%;
-  padding-bottom:10%;
-  
+  padding-bottom: 10%;
 
   &__link {
-    color: $link_color; // This makes the link text red
-    text-decoration: none; // Removes the default underline (optional)
+    color: var(--link-color);
+    text-decoration: none;
 
     &:hover {
-      color: $link_hover; // Changes color on hover (optional)
+      color: var(--link-hover);
     }
   }
 }
 
-.container_first{
+.container_first {
   padding-top: 15px;
-  display:flex;
+  display: flex;
   justify-content: space-between;
 
-  .info{
+  .info {
     text-align: center;
 
-    .phone_icon, .location_icon, .email_icon{
+    .phone_icon,
+    .location_icon,
+    .email_icon {
       height: 15px;
       width: 15px;
     }
   }
 }
 
-.container_second{
-  display:flex;
+.container_second {
+  display: flex;
   padding-top: 25px;
   justify-content: space-between;
 }
 
-.container_third{
-  display:flex;
+.container_third {
+  display: flex;
   padding-top: 25px;
   justify-content: space-between;
 }
 
-.container_fourth{
-  display:flex;
+.container_fourth {
+  display: flex;
   justify-content: space-between;
   padding-top: 25px;
 }
@@ -90,87 +84,95 @@
   justify-content: space-between;
 }
 
-.mk_image{
+.mk_image {
   height: 150px;
   border-radius: 50%;
   margin-left: 15%;
 }
 
-.instagram, .whatsUp, .telegram, .github {
+.instagram,
+.whatsUp,
+.telegram,
+.github {
   height: 15px;
   width: 15px;
   border-radius: 50%;
 }
 
-.ukrainian, .english, .german, .french, .parashian {
+.ukrainian,
+.english,
+.german,
+.french,
+.parashian {
   height: 25px;
   width: 25px;
   border-radius: 50%;
 }
 
+/* Popup text initially hidden */
+.popup-text {
+  visibility: hidden;
+  opacity: 0;
+  width: 200px;
+  background-color: var(--main-color_2);
+  color: white;
+  text-align: center;
+  border-radius: 5px;
+  padding: 5px;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -100px;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
 
-.about {
-  font-size: 8px;
-  position: relative; // Required for positioning the pop-up
+/* Show popup text on hover of parent element (h3) */
+h3:hover .popup-text {
+  visibility: visible;
+  opacity: 1;
+}
 
-  cursor: pointer; // Changes cursor to indicate interactivity
-
-  .popup-text {
-    visibility: hidden; // Hide the pop-up by default
-    opacity: 0;
-    width: 200px; // Set a fixed width for the pop-up
-    background-color: $main_color_2; // Use your theme color
-    color: white; // Text color
-    text-align: center;
-    border-radius: 5px;
-    padding: 5px;
-    position: absolute;
-    z-index: 1; // Ensure the pop-up appears above other content
-    bottom: 125%; // Position the pop-up above the <h3>
-    left: 50%;
-    margin-left: -100px; // Center the pop-up
-    transition: opacity 0.3s ease, visibility 0.3s ease; // Smooth transition
-  }
-
-  &:hover .popup-text {
-    visibility: visible; // Show the pop-up on hover
-    opacity: 1;
-  }
-
-  &:hover {
-    transform: scale(1.1); // Optional: Enlarges text on hover
-    transition: transform 0.3s ease;
-  }
+/* Optional: Apply a slight scaling effect to the parent h3 when hovered */
+h3:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
 }
 
 .social_media {
   display: flex;
-  gap: 10px; // Adds space between icons
+  gap: 10px;
   padding-left: 25%;
 
   a {
-    display: inline-block; // Ensures the link wraps the image properly
+    display: inline-block;
   }
 
   img {
-    width: 25px; // Set a fixed size for the icons
+    width: 25px;
     height: 25px;
-    border-radius: 50%; // Optional: Makes the icons circular
-    transition: transform 0.3s ease; // Optional: Adds hover effect
+    border-radius: 50%;
+    transition: transform 0.3s ease;
 
     &:hover {
-      transform: scale(1.3); // Optional: Enlarges icons on hover
+      transform: scale(1.3);
     }
   }
 }
 
-
-.change_language{
+.change_language {
   display: flex;
   justify-content: flex-end;
-  
 
-  .change_language_en, .change_language_fr, .change_language_ua{
-    font-size:8px;
+  .change_language_en,
+  .change_language_fr,
+  .change_language_ua {
+    font-size: 8px;
   }
 }
+
+.change_theme {
+  display: flex;
+  justify-content: flex-end;
+}
+

@@ -5,13 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CV Maksym Karashevskyi</title>
     <link rel="stylesheet" href="./styles/index.scss" />
-    <script src="scripts/main.js" defer></script>
+    <script type="module" src="/src/scripts/main.js"></script>
     <link rel="icon" href="favicon.svg" />
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   </head>
 
   <body class="body">
     <div class="content">
+      
+      <div class="change_theme">
+        <div id="theme-buttons" class="theme-buttons hidden">
+            <button class="theme-btn" data-theme="default"></button>
+            <button class="theme-btn" data-theme="dark"></button>
+            <button class="theme-btn" data-theme="yellow"></button>
+            <button class="theme-btn" data-theme="green"></button>
+        </div>
+        <button id="settings-btn" class="settings-btn">
+          <img src="../img/settings_icon.png" alt="Settings">
+        </button>
+      </div>
+
       <div class="change_language">
         <h3 class="change_language_en">EN</h3>
         <h3 class="change_language_fr">FR</h3>
@@ -41,29 +54,30 @@
             <h2 data-en="Programming education" data-fr="Formation en programmation" data-ua="Програмування">Programming education</h2>
             <h4 data-en="APR 2023 - DEC 2024" data-fr="AVR 2023 - DÉC 2024" data-ua="КВІ 2023 - ГРУ 2024">APR 2023 - DEC 2024</h4>
             <h3>
+              <a class="content__link" href="https://mate.academy/en/courses/fullstack" data-en="MateAcademy, FullStack" data-fr="MateAcademy, FullStack" data-ua="MateAcademy, FullStack">MateAcademy, FullStack</a>
               <span class="popup-text" data-en="I finished the course, completing the themes: JS, TS, HTML, CSS, SCSS, working with Git, DOM, React, Redux, Vue, Angular, SQL, Node.js, Docker, Data structures and SOLID principles, SCRUM methodology and working with JIRA"
                     data-fr="J'ai terminé le cours, en complétant les thèmes : JS, TS, HTML, CSS, SCSS, travail avec Git, DOM, React, Redux, Vue, Angular, SQL, Node.js, Docker, structures de données et principes SOLID, méthodologie SCRUM et travail avec JIRA"
                     data-ua="Я завершив курс, вивчаючи теми: JS, TS, HTML, CSS, SCSS, робота з Git, DOM, React, Redux, Vue, Angular, SQL, Node.js, Docker, структури даних та принципи SOLID, методологія SCRUM та робота з JIRA">
                 I finished the course, completing the themes: JS, TS, HTML, CSS, SCSS, working with Git, DOM, React, Redux, Vue, Angular, SQL, Node.js, Docker, Data structures and SOLID principles, SCRUM methodology and working with JIRA
               </span>
-              <a class="content__link" href="https://mate.academy/en/courses/fullstack" data-en="-MateAcademy, FullStack" data-fr="-MateAcademy, FullStack" data-ua="-MateAcademy, FullStack">-MateAcademy, FullStack</a>
+              <span class="toggle__btn">⌵</span> <!-- Toggle button -->
             </h3>
 
             <h4 data-en="DÉC 2020 - JAN 2023" data-fr="DÉC 2020 - JAN 2023" data-ua="ГРУ 2020 - СІЧ 2023">DÉC 2020 - JAN 2023</h4>
             <h3 data-en="FreeCodeCamp:" data-fr="FreeCodeCamp:" data-ua="FreeCodeCamp:">FreeCodeCamp:</h3>
             <p>
-              <a class="content__link" href="https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures-v8" data-en="-> Front End Development Libraries" data-fr="-> Bibliothèques de développement front-end" data-ua="-> Бібліотеки для фронтенд-розробки">-> Front End Development Libraries</a>
+              <a class="content__link" href="https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures-v8" data-en="Front End Development Libraries" data-fr="Bibliothèques de développement front-end" data-ua="Бібліотеки для фронтенд-розробки">Front End Development Libraries</a>
             </p>
             <p>
-              <a class="content__link" href="https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures-v8" data-en="-> Relational Database" data-fr="-> Base de données relationnelle" data-ua="-> Реляційні бази даних">-> Relational Database</a>
+              <a class="content__link" href="https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures-v8" data-en="Relational Database" data-fr="Base de données relationnelle" data-ua="Реляційні бази даних">Relational Database</a>
             </p>
             <p>
-              <a class="content__link" href="https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures-v8" data-en="-> JavaScript Algorithms and Data Structures" data-fr="-> Algorithmes et structures de données en JavaScript" data-ua="-> Алгоритми та структури даних на JavaScript">-> JavaScript Algorithms and Data Structures</a>
+              <a class="content__link" href="https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures-v8" data-en="JavaScript Algorithms and Data Structures" data-fr="Algorithmes et structures de données en JavaScript" data-ua="Алгоритми та структури даних на JavaScript">JavaScript Algorithms and Data Structures</a>
             </p>
           </section>
 
           <div class="info">
-            <img class="phone_icon" src="/img/phone_icon.svg"><h3 data-en="+380 63 94 740 24" data-fr="+380 63 94 740 24" data-ua="+380 63 94 740 24">+380 63 94 740 24</h3>
+            <img class="phone_icon" src="/img/phone_icon.svg"><h3 data-en="+41 78 338 81 35" data-fr="+41 78 338 81 35" data-ua="+41 78 338 81 35">+41 78 338 81 35</h3>
             <img class="location_icon" src="/img/location_icon.svg"><h3 data-en="Neuchatel 2000, Rue du Seyon 25" data-fr="Neuchatel 2000, Rue du Seyon 25" data-ua="Невшатель 2000, Rue du Seyon 25">Neuchatel 2000, Rue du Seyon 25</h3>
             <img class="email_icon" src="/img/email_icon.svg"><h3 data-en="maksym.karashevskyi@gmail.com" data-fr="maksym.karashevskyi@gmail.com" data-ua="maksym.karashevskyi@gmail.com">maksym.karashevskyi@gmail.com</h3>
           </div>
@@ -80,6 +94,7 @@
                     data-ua="Навчався у невеликій гірській сільській школі на заході України, але на 9-му році навчання вирішив перейти до найкращої спеціалізованої школи у найближчому місті.">
                 Studied in a small mountain village school in Western Ukraine, but in the 9th year decided to go to the best specialized school in the nearest town.
               </span>
+              <span class="toggle__btn">⌵</span> <!-- Toggle button -->
             </h3>
 
             <h4 data-en="SEP 2008 - MAY 2017" data-fr="SEP 2008 - MAI 2017" data-ua="ВЕР 2008 - ТРА 2017">SEP 2008 - MAY 2017</h4>
@@ -90,6 +105,7 @@
                     data-ua="Школа спеціалізувалася на вивченні англійської мови.">
                 The school specialized in English language.
               </span>
+              <span class="toggle__btn">⌵</span> <!-- Toggle button -->
             </h3>
 
             <h4 data-en="SEP 2019 - JAN 2020" data-fr="SEP 2019 - JAN 2020" data-ua="ВЕР 2019 - СІЧ 2020">SEP 2019 - JAN 2020</h4>
@@ -100,6 +116,7 @@
                     data-ua="Програма, заснована на військовій підготовці в Ізраїлі, але з більш інтелектуальними аспектами.">
                 Program based on military training in Israel but with more intellectual aspects.
               </span>
+              <span class="toggle__btn">⌵</span> <!-- Toggle button -->
             </h3>
 
             <h4 data-en="SEP 2020 - MAY 2021" data-fr="SEP 2020 - MAI 2021" data-ua="ВЕР 2020 - ТРА 2021">SEP 2020 - MAY 2021</h4>
@@ -110,6 +127,7 @@
                     data-ua="На той час я хотів стати психотерапевтом, натхненний Віктором Франклом, але згодом я зрозумів, що найкраще, що я можу робити як психотерапевт, це запобігання, а не лікування. З цим на думці я зосередився на медіаплатформах, які разом мали близько 80 тисяч підписників, і отримав роботу бариста/менеджера в салоні краси мого друга.">
                 At the time, I wanted to become a psychotherapist, inspired by Viktor Frankl, but eventually, I discovered that the best thing I could do as a psychotherapist is prevention, not healing. With that in mind, I gave my full attention to media platforms, which combined had about 80k followers, and got a job as a barista/manager in my friend's beauty salon.
               </span>
+              <span class="toggle__btn">⌵</span> <!-- Toggle button -->
             </h3>
 
             <h4 data-en="SEP 2022 - MAY 2023" data-fr="SEP 2022 - MAI 2023" data-ua="ВЕР 2022 - ТРА 2023">SEP 2022 - MAY 2023</h4>
@@ -120,6 +138,7 @@
                     data-ua="З метою переїзду до США я вступив до філії Університету штату Аризона в Києві, але через нові закони стало неможливо виїхати з країни.">
                 With the goal of going to the USA, I enrolled in a branch of Arizona State University in Kyiv, but due to new laws, it became impossible to leave the country.
               </span>
+              <span class="toggle__btn">⌵</span> <!-- Toggle button -->
             </h3>
           </section>
 
@@ -140,9 +159,11 @@
         <div class="container_third">
           <section>
             <h2 data-en="Projects" data-fr="Projets" data-ua="Проєкти">Projects</h2>
+
             <h3>
               <a class="content__link" href="https://q1w2e3r4t5y6u7i8a.github.io/react_phone-catalog/" data-en="React-based website" data-fr="Site web basé sur React" data-ua="Веб-сайт на React">React-based website</a>
             </h3>
+
             <h3>
               <a class="content__link" href="https://dumy-finance-app.vercel.app/" data-en="Personal financial app" data-fr="Application financière personnelle" data-ua="Особистий фінансовий додаток">Personal financial app</a>
               <span class="popup-text" data-en="This is a Saas Platform with Nextjs, React, Honojs with CSV upload."
@@ -150,16 +171,22 @@
                     data-ua="Це платформа Saas з Nextjs, React, Honojs і завантаженням CSV.">
                 This is a Saas Platform with Nextjs, React, Honojs with CSV upload.
               </span>
+              <span class="toggle__btn">⌵</span> <!-- Toggle button -->
             </h3>
-            <h3 data-en="Bookcrossing app" data-fr="Application Bookcrossing" data-ua="Додаток для буккроссингу">Bookcrossing app
+
+            <h3>
+              <a data-en="Bookcrossing app" data-fr="Application Bookcrossing" data-ua="Додаток для буккроссингу"> Bookcrossing app </a>
               <span class="popup-text" data-en="Developing on Kotlin for Android right now. It should be a platform where you can get a book worth 10$ for FREE, but you'll have to do deposit 10$ which you can get back when you return the book."
                     data-fr="Je développe actuellement sur Kotlin pour Android. Il devrait s'agir d'une plateforme où vous pouvez obtenir un livre d'une valeur de 10$ gratuitement, mais vous devez déposer 10$, que vous pourrez récupérer lorsque vous retournerez le livre."
                     data-ua="Розробляю на Kotlin для Android. Це буде платформа, де ви можете отримати книгу вартістю 10$ БЕЗКОШТОВНО, але маєте внести депозит у розмірі 10$, який ви отримаєте назад, коли повернете книгу.">
                 Developing on Kotlin for Android right now. It should be a platform where you can get a book worth 10$ for FREE, but you'll have to do deposit 10$ which you can get back when you return the book.
               </span>
+              <span class="toggle__btn">⌵</span> <!-- Toggle button -->
             </h3>
-            <h3 data-en="Other, small projects" data-fr="Autres petits projets" data-ua="Інші, невеликі проекти">Other, small projects
-              <div class="popup-text">
+
+            <h3>
+            <a data-en="Other, small projects" data-fr="Autres petits projets" data-ua="Інші, невеликі проекти">Other, small projects</a>
+              <span class="popup-text">
                 -Game 2048 <br>
                 <a href="https://q1w2e3r4t5y6u7i8a.github.io/js_2048_game/">https://q1w2e3r4t5y6u7i8a.github.io/js_2048_game/</a><br>
             
@@ -180,8 +207,8 @@
                             
                 -React/Redux list of todos <br>
                 <a href="https://q1w2e3r4t5y6u7i8a.github.io/react_redux-list-of-todos/">https://q1w2e3r4t5y6u7i8a.github.io/react_redux-list-of-todos/</a><br>
-            </div>
-            
+            </span>
+            <span class="toggle__btn">⌵</span> <!-- Toggle button -->
             </h3>
 
             <h4 data-en="DEC 2020 - JAN 2023" data-fr="DÉC 2020 - JAN 2023" data-ua="ГРУ 2020 - СІЧ 2023">DEC 2020 - JAN 2023</h4>
@@ -191,7 +218,7 @@
           <div class="ps_portrait">
             <h3>
               <a class="content__link" 
-              href="ps_portrait.html" 
+              href="ps_portrait_developer.html" 
               data-en="Psychological portrait" 
               data-fr="Portrait psychologique" 
               data-ua="Психологічний портрет">Psychological portrait</a>

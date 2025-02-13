@@ -1,0 +1,59 @@
+/* Hide by default */
+.hidden {
+    display: none !important;
+}
+
+/* Settings button */
+.settings-btn {
+    all: unset;
+    cursor: pointer;
+    width: 10px;
+    height: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.settings-btn img {
+    width: 10px;
+    height: 10px;
+    transition: transform 0.3s ease;
+}
+
+/* Rotate on click */
+.settings-btn.active img {
+    transform: rotate(90deg);
+}
+
+/* Theme buttons */
+.theme-buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+button.theme-btn {
+    all: unset;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+button[data-theme="default"] { background-color: #1D92B6; }
+button[data-theme="dark"] { background-color: #2D2D2D; }
+button[data-theme="yellow"] { background-color: #F9D342; }
+button[data-theme="green"] { background-color: #4CAF50; }
+button[data-theme="black"] { background-color: #121212; }
+
+.theme-btn:hover {
+    transform: scale(1.1);
+    opacity: 0.8;
+}
+
+/* White border radius for selected button */
+.theme-btn.selected {
+    border: 2px solid white;
+    border-radius: 7.5px;
+}

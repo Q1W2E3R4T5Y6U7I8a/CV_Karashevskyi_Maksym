@@ -1,62 +1,94 @@
-$main_color_1: #16B2D9;
-$main_color_2: #2E95AE;
-$background_of_date: #397584;
-$link_hover: #1639D9;
-$link_color: #273133;
+// Define CSS custom properties for themes
+:root {
+  // Default theme
+  --main-color-1: #16B2D9;
+  --main-color-2: #2E95AE;
+  --background-of-date: #397584;
+  --link-hover: #1639D9;
+  --link-color: #273133;
 
-h3,h4,p{
-    margin: 6px;
+  // Dark theme
+  --dark-main-color-1: #1c1c1c;
+  --dark-main-color-2: #333333;
+  --dark-background-of-date: #222222;
+  --dark-link-hover: #f1f1f1;
+  --dark-link-color: #cccccc;
+
+  // Yellow theme
+  --yellow-main-color-1: #f9d342;
+  --yellow-main-color-2: #e0b400;
+  --yellow-background-of-date: #ffea4e;
+  --yellow-link-hover: #ffbc00;
+  --yellow-link-color: #6b6b00;
+
+  // Green theme
+  --green-main-color-1: #4CAF50;
+  --green-main-color-2: #45a049;
+  --green-background-of-date: #388e3c;
+  --green-link-hover: #66bb6a;
+  --green-link-color: #2c6e2f;
+
+  // Black theme
+  --black-main-color-1: #000000;
+  --black-main-color-2: #1d1d1d;
+  --black-background-of-date: #303030;
+  --black-link-hover: #575757;
+  --black-link-color: #ffffff;
 }
 
-h4{
-    background-color: $background_of_date;
-    font-size: 8px;
-    font-weight: 400;
+// Use CSS custom properties in your styles
+h3, h4, p {
+  margin: 6px;
 }
 
-h3{
+h4 {
+  background-color: var(--background-of-date);
+  font-size: 8px;
+  font-weight: 400;
+}
+
+h3 {
   font-size: 12px;
 }
 
-h3,h2 {
-    position: relative; // Required for positioning the pop-up
+h3, h2 {
+  position: relative;
+  cursor: pointer;
 
-    cursor: pointer; // Changes cursor to indicate interactivity
-  
-    .popup-text {
-      visibility: hidden; // Hide the pop-up by default
-      opacity: 0;
-      width: 200px; // Set a fixed width for the pop-up
-      background-color: $main_color_2; // Use your theme color
-      color: white; // Text color
-      text-align: center;
-      border-radius: 5px;
-      padding: 5px;
-      position: absolute;
-      z-index: 1; // Ensure the pop-up appears above other content
-      bottom: 125%; // Position the pop-up above the <h3>
-      left: 50%;
-      margin-left: -100px; // Center the pop-up
-      transition: opacity 0.3s ease, visibility 0.3s ease; // Smooth transition
-      font-size: 12px;
-    }
-  
-    &:hover .popup-text {
-      visibility: visible; // Show the pop-up on hover
-      opacity: 1;
-    }
-  
-    &:hover {
-      transform: scale(1.1); // Optional: Enlarges text on hover
-      transition: transform 0.3s ease;
-    }
+  .popup-text {
+    visibility: hidden;
+    opacity: 0;
+    width: 200px;
+    background-color: var(--main-color-2);
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -100px;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    font-size: 12px;
   }
 
-h2{
-    font-size: 20px;
-    margin-top: 0px;
+  &:hover .popup-text {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  &:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+  }
+}
+
+h2 {
+  font-size: 20px;
+  margin-top: 0px;
 }
 
 p {
-    font-size: 10px;
+  font-size: 10px;
 }

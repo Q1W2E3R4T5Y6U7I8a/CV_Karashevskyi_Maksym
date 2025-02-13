@@ -1,7 +1,7 @@
 .body_ps_portrait{
     padding-left: 5%;
     padding-right: 5%;
-    background-color: $main_color_1;
+    background-color: var(--main-color-1);
 }
 
 .motivational__letter{
@@ -24,3 +24,10 @@
 .other{
     padding-top: 25px;
 }
+
+.container_fourth {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 25px;
+  }
+  
